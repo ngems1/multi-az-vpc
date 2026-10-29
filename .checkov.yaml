@@ -1,0 +1,9 @@
+# Checkov configuration used by CI and `make security`.
+# Every skip must carry a justification here or inline (#checkov:skip=...).
+framework:
+  - terraform
+compact: true
+quiet: true
+skip-path:
+  - tests
+  - .terraform

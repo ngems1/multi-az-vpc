@@ -1,0 +1,27 @@
+# Terraform working directories and state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Lock file: reusable modules do not commit it (root deployments should)
+.terraform.lock.hcl
+
+# Local overrides & real backend config
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+backend.tf
+*.auto.tfvars
+.terraformrc
+terraform.rc
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

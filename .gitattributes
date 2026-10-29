@@ -1,0 +1,3 @@
+# Keep LF line endings on every OS (important when committing from Windows,
+# otherwise `terraform fmt -check` and the Makefile fail in Linux CI).
+* text=auto eol=lf
